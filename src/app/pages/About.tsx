@@ -49,7 +49,7 @@ export function About() {
   ];
 
   return (
-    <div className="bg-[#0a1f1a] text-white min-h-screen">
+    <div className="bg-white text-gray-900 min-h-screen">
       {/* Hero Section */}
       <section className="py-32">
         <div className="max-w-7xl mx-auto px-6">
@@ -60,9 +60,9 @@ export function About() {
             className="text-center max-w-4xl mx-auto"
           >
             <h1 className="text-5xl md:text-7xl mb-6">
-              About <span className="italic text-[#c4ff61]">NexaCode</span>
+              About <span className="italic text-[#4a9d2e]">NexaCode</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/70">
+            <p className="text-xl md:text-2xl text-gray-600">
               We're a team of passionate developers, designers, and innovators dedicated to building exceptional software solutions.
             </p>
           </motion.div>
@@ -77,12 +77,12 @@ export function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-[#051410] border border-white/10 rounded-2xl p-12"
+            className="bg-gray-50 border border-gray-200 rounded-2xl p-12"
           >
             <h2 className="text-3xl md:text-4xl mb-6">
-              Our <span className="italic text-[#c4ff61]">Story</span>
+              Our <span className="italic text-[#4a9d2e]">Story</span>
             </h2>
-            <div className="space-y-4 text-white/70 text-lg">
+            <div className="space-y-4 text-gray-600 text-lg">
               <p>
                 Founded in 2018, NexaCode started with a simple mission: to help businesses leverage technology to achieve their goals. What began as a small team of developers has grown into a full-service software agency.
               </p>
@@ -98,7 +98,7 @@ export function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-32 bg-[#051410]">
+      <section className="py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -108,9 +108,9 @@ export function About() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl mb-4">
-              Our <span className="italic text-[#c4ff61]">Values</span>
+              Our <span className="italic text-[#4a9d2e]">Values</span>
             </h2>
-            <p className="text-xl text-white/60 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               The principles that guide everything we do
             </p>
           </motion.div>
@@ -123,11 +123,11 @@ export function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
-                className="bg-[#0a1f1a] border border-white/10 rounded-2xl p-8 hover:border-[#c4ff61]/50 transition-all"
+                className="bg-[#0a1f1a] border border-gray-200 rounded-2xl p-8 hover:border-[#c4ff61]/50 transition-all"
               >
-                <div className="text-[#c4ff61] mb-4">{value.icon}</div>
+                <div className="text-[#4a9d2e] mb-4">{value.icon}</div>
                 <h3 className="text-xl mb-3">{value.title}</h3>
-                <p className="text-white/60 text-sm">{value.description}</p>
+                <p className="text-gray-600 text-sm">{value.description}</p>
               </motion.div>
             ))}
           </div>
@@ -145,9 +145,9 @@ export function About() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl mb-4">
-              Meet the <span className="italic text-[#c4ff61]">Team</span>
+              Meet the <span className="italic text-[#4a9d2e]">Team</span>
             </h2>
-            <p className="text-xl text-white/60 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               The talented people behind our success
             </p>
           </motion.div>
@@ -168,10 +168,10 @@ export function About() {
                     alt={member.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1f1a] via-transparent to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-60" />
                 </div>
                 <h3 className="text-xl mb-1">{member.name}</h3>
-                <p className="text-[#c4ff61] text-sm">{member.role}</p>
+                <p className="text-[#4a9d2e] text-sm">{member.role}</p>
               </motion.div>
             ))}
           </div>
@@ -179,7 +179,7 @@ export function About() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-32 bg-[#051410]">
+      <section className="py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -196,10 +196,10 @@ export function About() {
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 className="text-center"
               >
-                <div className="text-4xl md:text-5xl font-bold text-[#c4ff61] mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-[#4a9d2e] mb-2">
                   {stat.number}
                 </div>
-                <div className="text-white/60">{stat.label}</div>
+                <div className="text-gray-600">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -207,7 +207,7 @@ export function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-[#0a1f1a]">
+      <section className="py-32 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -216,14 +216,14 @@ export function About() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl md:text-6xl mb-6">
-              Want to <span className="italic text-[#c4ff61]">join us?</span>
+              Want to <span className="italic text-[#4a9d2e]">join us?</span>
             </h2>
-            <p className="text-xl text-white/60 mb-8">
+            <p className="text-xl text-gray-600 mb-8">
               We're always looking for talented people to join our team
             </p>
             <a
               href="/contact"
-              className="bg-[#c4ff61] text-[#0a1f1a] px-10 py-5 rounded-full hover:bg-[#b5f052] transition-all hover:scale-105 inline-block text-lg"
+              className="bg-[#4a9d2e] text-white px-10 py-5 rounded-full hover:bg-[#3a7d1e] transition-all hover:scale-105 inline-block text-lg font-semibold"
             >
               Get in Touch
             </a>

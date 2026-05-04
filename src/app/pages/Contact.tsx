@@ -26,7 +26,7 @@ export function Contact() {
   };
 
   return (
-    <div className="bg-[#0a1f1a] text-white min-h-screen">
+    <div className="bg-white text-gray-900 min-h-screen">
       {/* Hero Section */}
       <section className="py-32">
         <div className="max-w-7xl mx-auto px-6">
@@ -37,9 +37,9 @@ export function Contact() {
             className="text-center max-w-4xl mx-auto"
           >
             <h1 className="text-5xl md:text-7xl mb-6">
-              Let's <span className="italic text-[#c4ff61]">Connect</span>
+              Let's <span className="italic text-[#4a9d2e]">Connect</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/70">
+            <p className="text-xl md:text-2xl text-gray-600">
               Have a project in mind? We'd love to hear from you. Get in touch and let's build something amazing together.
             </p>
           </motion.div>
@@ -58,7 +58,7 @@ export function Contact() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl mb-8">
-                Get in <span className="italic text-[#c4ff61]">Touch</span>
+                Get in <span className="italic text-[#4a9d2e]">Touch</span>
               </h2>
               <div className="space-y-8">
                 <div className="flex gap-4">
@@ -69,7 +69,7 @@ export function Contact() {
                     <h3 className="text-xl mb-2">Email</h3>
                     <a
                       href="mailto:hello@nexacode.com"
-                      className="text-white/70 hover:text-[#c4ff61] transition-colors"
+                      className="text-gray-600 hover:text-[#4a9d2e] transition-colors"
                     >
                       hello@nexacode.com
                     </a>
@@ -83,7 +83,7 @@ export function Contact() {
                     <h3 className="text-xl mb-2">Phone</h3>
                     <a
                       href="tel:+15551234567"
-                      className="text-white/70 hover:text-[#c4ff61] transition-colors"
+                      className="text-gray-600 hover:text-[#4a9d2e] transition-colors"
                     >
                       +1 (555) 123-4567
                     </a>
@@ -99,7 +99,7 @@ export function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <form onSubmit={handleSubmit} className="bg-[#051410] border border-white/10 rounded-2xl p-8">
+              <form onSubmit={handleSubmit} className="bg-gray-50 border border-gray-200 rounded-2xl p-8">
                 <div className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm mb-2">
@@ -112,7 +112,7 @@ export function Contact() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full bg-[#0a1f1a] border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-[#c4ff61] transition-colors"
+                      className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-[#4a9d2e] transition-colors"
                       placeholder="Your name"
                     />
                   </div>
@@ -127,7 +127,7 @@ export function Contact() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full bg-[#0a1f1a] border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-[#c4ff61] transition-colors"
+                      className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-[#4a9d2e] transition-colors"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -141,7 +141,7 @@ export function Contact() {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full bg-[#0a1f1a] border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-[#c4ff61] transition-colors"
+                      className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-[#4a9d2e] transition-colors"
                       placeholder="Your company name"
                     />
                   </div>
@@ -156,7 +156,7 @@ export function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={6}
-                      className="w-full bg-[#0a1f1a] border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-[#c4ff61] transition-colors resize-none"
+                      className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-[#4a9d2e] transition-colors resize-none"
                       placeholder="Tell us about your project..."
                     />
                   </div>
@@ -175,7 +175,7 @@ export function Contact() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-32 bg-[#051410]">
+      <section className="py-32 bg-gray-50">
         <div className="max-w-4xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -185,7 +185,7 @@ export function Contact() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl mb-4">
-              Frequently Asked <span className="italic text-[#c4ff61]">Questions</span>
+              Frequently Asked <span className="italic text-[#4a9d2e]">Questions</span>
             </h2>
           </motion.div>
 
@@ -214,10 +214,10 @@ export function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
-                className="bg-[#0a1f1a] border border-white/10 rounded-2xl p-8"
+                className="bg-white border border-gray-200 rounded-2xl p-8"
               >
-                <h3 className="text-xl mb-3 text-[#c4ff61]">{faq.question}</h3>
-                <p className="text-white/70">{faq.answer}</p>
+                <h3 className="text-xl mb-3 text-[#4a9d2e]">{faq.question}</h3>
+                <p className="text-gray-600">{faq.answer}</p>
               </motion.div>
             ))}
           </div>
