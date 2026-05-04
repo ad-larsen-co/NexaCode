@@ -9,7 +9,7 @@ export function Work() {
       description: "A comprehensive financial management platform with AI-powered insights and real-time analytics.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc3Mzg4ODMzM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       tech: ["React", "Node.js", "PostgreSQL", "AI/ML"],
-      url: "https://financeflow-demo.example.com",
+      url: "https://finlygo.com/",
     },
     {
       title: "ShopNow",
@@ -17,7 +17,7 @@ export function Work() {
       description: "Modern e-commerce platform with seamless checkout and inventory management.",
       image: "https://images.unsplash.com/photo-1762341119237-98df67c9c3c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXZlbG9wbWVudCUyMHBob25lfGVufDF8fHx8MTc3Mzk2NjQ5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       tech: ["Next.js", "Stripe", "MongoDB"],
-      url: "https://shopnow-demo.example.com",
+      url: "https://shopnowstores.com/",
     },
     {
       title: "HealthTrack",
@@ -25,7 +25,7 @@ export function Work() {
       description: "Mobile health tracking application with wearable device integration.",
       image: "https://images.unsplash.com/photo-1772971919689-c216435a5899?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGRldmVsb3BtZW50JTIwdGVhbSUyMGNvZGluZ3xlbnwxfHx8fDE3NzM5NzcwNDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       tech: ["React Native", "Firebase", "HealthKit"],
-      url: "https://healthtrack-demo.example.com",
+      url: "https://www.htsw.net/",
     },
     {
       title: "CloudSync",
@@ -33,7 +33,7 @@ export function Work() {
       description: "Enterprise cloud storage and collaboration platform with end-to-end encryption.",
       image: "https://images.unsplash.com/photo-1667984390553-7f439e6ae401?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMGNvbXB1dGluZyUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzczODg4NzkzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       tech: ["Vue.js", "AWS", "WebRTC"],
-      url: "https://cloudsync-demo.example.com",
+      url: "https://www.cloudsynctech.com/",
     },
     {
       title: "AIWriter",
@@ -41,7 +41,7 @@ export function Work() {
       description: "AI-powered content generation platform for marketers and creators.",
       image: "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NzM5MTYxNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       tech: ["React", "OpenAI", "Python"],
-      url: "https://aiwriter-demo.example.com",
+      url: "https://www.docuwriter.ai/",
     },
     {
       title: "TravelHub",
@@ -49,7 +49,7 @@ export function Work() {
       description: "Comprehensive travel booking and itinerary planning application.",
       image: "https://images.unsplash.com/photo-1637502875124-eb4a9843a2fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXNpZ24lMjB3b3Jrc3BhY2UlMjBsYXB0b3B8ZW58MXx8fHwxNzczOTI1NjEzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       tech: ["Angular", "GraphQL", "Microservices"],
-      url: "https://travelhub-demo.example.com",
+      url: "https://www.travelhubworld.com/",
     },
   ];
 
