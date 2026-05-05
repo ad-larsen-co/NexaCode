@@ -14,6 +14,7 @@ import {
   FileText,
   Rocket,
   LifeBuoy,
+  Check,
 } from "lucide-react";
 
 export function Services() {
@@ -95,18 +96,25 @@ export function Services() {
   return (
     <div className="bg-white text-gray-900 min-h-screen">
       {/* Hero Section */}
-      <section className="py-32">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-32 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-[#4a9d2e]/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#4a9d2e]/5 rounded-full blur-3xl"></div>
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <h1 className="text-5xl md:text-7xl mb-6">
+            <div className="inline-block mb-6 px-4 py-2 bg-[#4a9d2e]/10 rounded-full">
+              <span className="text-[#4a9d2e] font-semibold text-sm">Premium Services</span>
+            </div>
+            <h1 className="text-5xl md:text-7xl mb-6 font-bold leading-tight">
               Our <span className="italic text-[#4a9d2e]">Services</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600">
+            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
               Comprehensive software solutions tailored to your business needs. We combine technical excellence with creative innovation.
             </p>
           </motion.div>
@@ -114,7 +122,7 @@ export function Services() {
       </section>
 
       {/* Services Grid */}
-      <section className="pb-32">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -124,30 +132,32 @@ export function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.05 * index }}
-                className="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden hover:border-[#4a9d2e]/50 transition-all group"
+                className="bg-white border border-gray-200 rounded-3xl overflow-hidden hover:shadow-2xl hover:shadow-[#4a9d2e]/10 hover:-translate-y-1 transition-all duration-300 group"
               >
                 {/* Banner Image */}
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-50 via-gray-50/50 to-transparent" />
-                  <div className="absolute bottom-4 left-6 text-[#4a9d2e]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  <div className="absolute bottom-4 left-6 w-12 h-12 bg-white rounded-xl flex items-center justify-center text-[#4a9d2e] shadow-lg group-hover:scale-110 transition-transform duration-300">
                     {service.icon}
                   </div>
                 </div>
-                
+
                 {/* Content */}
                 <div className="p-8">
-                  <h3 className="text-2xl mb-4">{service.title}</h3>
-                  <p className="text-gray-600 mb-6">{service.description}</p>
-                  <ul className="space-y-2">
+                  <h3 className="text-2xl font-semibold mb-4 text-gray-900">{service.title}</h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                  <ul className="space-y-3">
                     {service.features.map((feature, i) => (
-                      <li key={i} className="text-sm text-gray-500 flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 bg-[#c4ff61] rounded-full" />
-                        {feature}
+                      <li key={i} className="text-sm text-gray-700 flex items-center gap-3">
+                        <div className="w-5 h-5 bg-[#4a9d2e]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                          <Check className="w-3 h-3 text-[#4a9d2e]" />
+                        </div>
+                        <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -159,8 +169,12 @@ export function Services() {
       </section>
 
       {/* Process Section */}
-      <section className="py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-32 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-0 left-10 w-72 h-72 bg-[#4a9d2e]/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-10 w-72 h-72 bg-[#4a9d2e]/5 rounded-full blur-3xl"></div>
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -168,7 +182,7 @@ export function Services() {
             transition={{ duration: 0.6 }}
             className="text-center mb-20"
           >
-            <h2 className="text-4xl md:text-5xl mb-4">
+            <h2 className="text-4xl md:text-5xl mb-4 font-bold">
               Our <span className="italic text-[#4a9d2e]">Process</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -176,110 +190,105 @@ export function Services() {
             </p>
           </motion.div>
 
-          <div className="relative">
-            {/* Connection Line - Desktop */}
-            <div className="hidden lg:block absolute top-32 left-[12.5%] right-[12.5%] h-1 bg-gradient-to-r from-[#4a9d2e]/20 via-[#4a9d2e]/60 to-[#4a9d2e]/20 rounded-full" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                step: "01",
+                icon: <Search className="w-7 h-7" />,
+                title: "Discovery",
+                description: "We dive deep into understanding your business, goals, and challenges",
+                features: ["Initial consultation", "Requirements gathering", "Market research", "Competitor analysis"],
+              },
+              {
+                step: "02",
+                icon: <FileText className="w-7 h-7" />,
+                title: "Planning",
+                description: "Strategic roadmap and technical architecture design tailored to your needs",
+                features: ["Project timeline", "Resource allocation", "Tech stack selection", "Design mockups"],
+              },
+              {
+                step: "03",
+                icon: <Code2 className="w-7 h-7" />,
+                title: "Development",
+                description: "Agile development with regular updates, feedback, and transparency",
+                features: ["Sprint cycles", "Code reviews", "Continuous integration", "Weekly demos"],
+              },
+              {
+                step: "04",
+                icon: <Rocket className="w-7 h-7" />,
+                title: "Launch & Support",
+                description: "Seamless deployment with ongoing monitoring and maintenance",
+                features: ["Production deployment", "Performance monitoring", "Bug fixes", "Feature updates"],
+              },
+            ].map((phase, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 * index }}
+                className="relative"
+              >
+                {/* Content Card */}
+                <div className="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-2xl hover:shadow-[#4a9d2e]/10 hover:-translate-y-1 transition-all duration-300 h-full">
+                  {/* Step Number */}
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-[#4a9d2e] to-[#3a7d1e] text-white mb-6 shadow-lg">
+                    {phase.icon}
+                  </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
-              {[
-                {
-                  step: "01",
-                  icon: <Search className="w-8 h-8" />,
-                  title: "Discovery",
-                  description: "We dive deep into understanding your business, goals, and challenges",
-                  features: ["Initial consultation", "Requirements gathering", "Market research", "Competitor analysis"],
-                },
-                {
-                  step: "02",
-                  icon: <FileText className="w-8 h-8" />,
-                  title: "Planning",
-                  description: "Strategic roadmap and technical architecture design tailored to your needs",
-                  features: ["Project timeline", "Resource allocation", "Tech stack selection", "Design mockups"],
-                },
-                {
-                  step: "03",
-                  icon: <Code2 className="w-8 h-8" />,
-                  title: "Development",
-                  description: "Agile development with regular updates, feedback, and transparency",
-                  features: ["Sprint cycles", "Code reviews", "Continuous integration", "Weekly demos"],
-                },
-                {
-                  step: "04",
-                  icon: <Rocket className="w-8 h-8" />,
-                  title: "Launch & Support",
-                  description: "Seamless deployment with ongoing monitoring and maintenance",
-                  features: ["Production deployment", "Performance monitoring", "Bug fixes", "Feature updates"],
-                },
-              ].map((phase, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.1 * index }}
-                  className="relative group"
-                >
-                  {/* Step Number Badge */}
-                  <div className="flex justify-center mb-6">
-                    <div className="relative">
-                      <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#4a9d2e] to-[#3a7d1e] flex items-center justify-center z-10 relative shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <div className="text-white">
-                          {phase.icon}
+                  <div className="mb-4">
+                    <span className="text-sm font-bold text-[#4a9d2e] tracking-wider">STEP {phase.step}</span>
+                  </div>
+
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">{phase.title}</h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed">{phase.description}</p>
+
+                  <ul className="space-y-3">
+                    {phase.features.map((feature, i) => (
+                      <li key={i} className="text-sm text-gray-700 flex items-start gap-3">
+                        <div className="w-5 h-5 bg-[#4a9d2e]/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <Check className="w-3 h-3 text-[#4a9d2e]" />
                         </div>
-                      </div>
-                      <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-white border-2 border-[#4a9d2e] flex items-center justify-center shadow-md">
-                        <span className="text-[#4a9d2e] text-xs font-bold">{phase.step}</span>
-                      </div>
-                    </div>
-                  </div>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
-                  {/* Content Card */}
-                  <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-[#4a9d2e] hover:shadow-xl transition-all duration-300 h-full">
-                    <h3 className="text-2xl font-semibold mb-3 text-center text-gray-900">{phase.title}</h3>
-                    <p className="text-gray-600 text-center mb-6 leading-relaxed">{phase.description}</p>
-                    <div className="pt-4 border-t border-gray-200">
-                      <ul className="space-y-2">
-                        {phase.features.map((feature, i) => (
-                          <li key={i} className="text-sm text-gray-500 flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-[#4a9d2e] rounded-full mt-1.5 flex-shrink-0" />
-                            <span>{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                {/* Arrow - Desktop */}
+                {index < 3 && (
+                  <div className="hidden lg:flex absolute top-20 -right-4 z-20 items-center justify-center w-8 h-8 bg-white rounded-full border border-gray-200 shadow-sm">
+                    <ArrowRight className="w-4 h-4 text-[#4a9d2e]" />
                   </div>
-
-                  {/* Arrow - Desktop */}
-                  {index < 3 && (
-                    <div className="hidden lg:block absolute top-32 -right-3 z-20">
-                      <ArrowRight className="w-6 h-6 text-[#4a9d2e]" />
-                    </div>
-                  )}
-                </motion.div>
-              ))}
-            </div>
+                )}
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="py-32 bg-gradient-to-br from-[#4a9d2e] to-[#3a7d1e] relative overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-6xl mb-6">
-              Let's discuss <span className="italic text-[#4a9d2e]">your project</span>
+            <h2 className="text-4xl md:text-6xl mb-6 text-white font-bold">
+              Let's discuss <span className="italic">your project</span>
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
-              Schedule a free consultation to explore how we can help
+            <p className="text-xl text-white/90 mb-8 leading-relaxed">
+              Schedule a free consultation to explore how we can help bring your vision to life
             </p>
             <a
               href="/contact"
-              className="bg-[#4a9d2e] text-white px-10 py-5 rounded-full hover:bg-[#3a7d1e] transition-all hover:scale-105 inline-block text-lg font-semibold"
+              className="bg-white text-[#4a9d2e] px-10 py-5 rounded-full hover:bg-gray-100 transition-all hover:scale-105 inline-block text-lg font-semibold shadow-xl"
             >
               Contact Us
             </a>

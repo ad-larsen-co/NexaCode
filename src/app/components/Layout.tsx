@@ -108,7 +108,7 @@ export function Layout() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-50 border-t border-gray-200 mt-32">
+      <footer className="bg-gray-50 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             <div>
