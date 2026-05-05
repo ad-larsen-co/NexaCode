@@ -156,23 +156,27 @@ export function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="py-32 bg-gradient-to-br from-[#4a9d2e] to-[#3a7d1e] relative overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-6xl mb-6">
-              Ready to build something <span className="italic text-[#4a9d2e]">amazing?</span>
+            <h2 className="text-4xl md:text-6xl mb-6 text-white font-bold">
+              Ready to build something <span className="italic">amazing?</span>
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-white/90 mb-8 leading-relaxed">
               Let's discuss your project and turn your ideas into reality
             </p>
             <Link
               to="/contact"
-              className="bg-[#c4ff61] text-[#0a1f1a] px-10 py-5 rounded-full hover:bg-[#b5f052] transition-all hover:scale-105 inline-flex items-center gap-2 text-lg"
+              className="bg-white text-[#4a9d2e] px-10 py-5 rounded-full hover:bg-gray-100 transition-all hover:scale-105 inline-flex items-center gap-2 text-lg font-semibold shadow-xl"
             >
               Get in Touch
               <ArrowRight size={24} />
